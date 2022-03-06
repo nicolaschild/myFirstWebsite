@@ -1,0 +1,257 @@
+html {
+    background-color: rgb(32, 32, 32);
+
+}
+.webPage {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 0.4fr 2.4fr 0.2fr; 
+    gap: 15px 0px; 
+    
+  }
+
+  /* BELOW IS ALL HEADER INFORMATION! */
+.header {
+    grid-area: 1 / 1 / 2 / 7; 
+}
+
+.mainPage { 
+    grid-area: 2 / 2 / 3 / 6; 
+}
+
+.Toolbar{ 
+grid-area: 1 / 2 / 2 / 6; 
+background-color: gray;
+}
+
+.Toolbar > * {
+    max-height: 11em;
+}
+  
+  .Menu { 
+    grid-area: Menu;
+        }
+  
+  .Name { 
+    grid-area: Name; 
+    background-color: #444444;
+    color: white;
+    font-size: 3em;
+    border: 2px solid black;
+    border-radius: 1px;
+    -webkit-text-stroke: 0.5px black;
+}
+  
+/* Photo and menu system */
+.menu {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 35px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "photo . . ."
+      "photo home AboutMe Projects"
+      "photo . . .";
+      border: 2px solid black;
+      border-radius: 1px;
+  }
+  
+.photoHeader { grid-area: photo; 
+    border: 2px solid black;
+    border-radius: 1px;
+    max-width: 10em;
+    }
+
+#home { grid-area: home; 
+    background-color: #dddddd;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 2em;
+    margin-left: -1em;
+    margin-right: 1em;
+    
+}
+
+#aboutMe { 
+    grid-area: AboutMe;
+    background-color: #dddddd;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 2em;
+    margin-right: 1em;
+    margin-left: -1em;
+}
+
+#projects { 
+    grid-area: Projects; 
+    background-color: #dddddd;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 2em;
+    margin-left: -1em;
+    margin-right: 1em;
+}
+
+.mainPage {
+    border: 2px solid black;
+    border-radius: 8px;
+    height: 52em;
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "creative creative creative creative creative creative creative creative"
+        ". . . . . . . ."
+        "photoOne photoOne photoOne photoOne photoOne photoOne photoOne photoOne"
+        "photoOne photoOne photoOne photoOne photoOne photoOne photoOne photoOne"
+        "photoOne photoOne photoOne photoOne photoOne photoOne photoOne photoOne"
+        ". . . . . . . ."
+        "photoTwo photoTwo photoTwo photoTwo photoTwo photoTwo photoTwo photoTwo"
+        "photoTwo photoTwo photoTwo photoTwo photoTwo photoTwo photoTwo photoTwo"
+        "photoTwo photoTwo photoTwo photoTwo photoTwo photoTwo photoTwo photoTwo"
+        "photoTwo photoTwo photoTwo photoTwo photoTwo photoTwo photoTwo photoTwo"
+        "photoTwo photoTwo photoTwo photoTwo photoTwo photoTwo photoTwo photoTwo"
+        "photoThree photoThree photoThree photoThree photoThree photoThree photoThree photoThree"
+        "photoThree photoThree photoThree photoThree photoThree photoThree photoThree photoThree"
+        ". . . . . . . .";
+}
+
+.creative {
+    background-color: #444444;
+    font-size: 2em;
+    color: white;
+    -webkit-text-stroke: 0.25px black;
+    font-weight: bold;
+    grid-area: creative;
+
+}
+
+#creativeText {
+    margin-top: 0.3em;
+    margin-left: 1.5em;
+
+}
+
+
+.imageBorders {
+    border: 2px solid black;
+    border-radius: 12px;
+    background-color: black;
+    box-shadow: 3px 3px #444444;
+}
+
+
+
+/* First photo area containter area with flex and grid */
+.photoOne {
+    grid-area: photoOne;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: normal;
+    align-content: normal;
+}
+
+
+#firstPicture {
+    object-fit: contain;
+    display: block;
+    flex-grow: 2;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: flex-end;
+    order: 0;
+    margin-right: 4em;
+    margin-left: 4em;
+
+}
+
+.descriptions {
+    display: block;
+    flex-grow: 3;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: flex-end;
+    order: 0;
+    margin-left: 1em;
+    margin-right: 4em;
+
+}
+
+#imageExplanation {
+    max-height: 15em;
+    min-width: 15em;
+    
+}
+
+
+#mainButton {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: flex-end;
+    order: 0;
+    margin-left: 2em;
+    margin-right: 4em;
+
+}
+
+#infoButton {
+    width: 10em;
+
+}
+
+/* SECOND LINE OF CSS FLEX STUFFS */
+.photoTwo {
+    grid-area: photoTwo;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: normal;
+    align-content: normal;
+
+
+}
+
+#secondVideo {
+    object-fit: contain;
+    display: block;
+    flex-grow: 2;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: flex-end;
+    order: 0;
+    margin-right: 4em;
+    margin-left: 4em;
+
+}
+
+#video {
+    border: 2px solid black;
+    border-radius: 12px;
+    background-color: black;
+    box-shadow: 3px 3px #444444;
+
+}
+
+
+
+
+.photoThree { grid-area: photoThree; }
+
+
+
+  /* PAGE INFORMATION FOR THE FOOTER */
+.Footer { 
+    grid-area: 3 / 1 / 4 / 7; 
+    min-height: 10em;
+    width: 110%;
+    background-color: white;
+}
+  

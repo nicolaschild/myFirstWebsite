@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+    <link rel="stylesheet" type="text/css" href="styles.css"></link>
+    <title>Nicolas Child</title>
+</head>
+<body>
+    <div class="webPage">
+        <!-- HEADER -->
+        <div class="header"></div>
+        <!-- Top of the page toolbar in its entirety -->
+        <div class="Toolbar">
+            <div class="Name"><center>Nicolas Child</center></div>
+                    
+                        <!-- Menu stuffs -->
+
+                        <div class="menu">
+                            <div class="photoHeader"><img src="images/Nick.jpg" width="100%" height="100%"></image></div>
+
+                            <!-- Home drop down menu -->
+                            <button id="home" onclick="pageRedirect('www.nicolaschild.com', 'home')">
+                                Home
+                            </button>
+
+                            <button id="aboutMe" onclick="pageRedirect('www.github.com/nicolaschild', 'aboutMe')">
+                                About Me
+                            </button>
+
+                            <button id="projects" onclick="pageRedirect('www.github.com/nicolaschild', 'projects')">
+                                Projects
+                            </button>
+
+
+                    </div>
+        </div>
+
+    <!-- MAIN PAGE -->
+    <div class="mainPage">
+        <!-- Creative Work Header for page -->
+        <div class="creative"><div id="creativeText">About Me</div></div>
+
+        <!-- Need to establish a CSS flexbox here -->
+        <div class="photoOne">
+            <div id="firstPicture"><img class="imageBorders"></image></div>
+            <div class="descriptions"><article id="imageExplanation"></article></div>
+            <div id="mainButton"><button id="infoButton" onclick="expandInfo()">Next Image</button></div>
+        </div>
+
+        <div class="photoTwo">
+            <!-- Youtube video in page -->
+            <div id="secondVideo">
+                <iframe id="video" width="100%" height="250em" src="https://www.youtube.com/embed/UJQYeiQYOvw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        
+
+        <!-- Another CSS flexbox -->
+        <div class="photoTwo"></div>
+
+        <!-- Another CSS flexbox -->
+        <div class="photoThree"></div>
+    </div>
+
+
+    </div>
+    <div class="Footer"><center>footer</center></div>
+    </div>
+</body>
+</html>
