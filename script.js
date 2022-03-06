@@ -1,13 +1,12 @@
 window.addEventListener("DOMContentLoaded", domLoaded);
 
+// Global variable to determine what photo is going to be shown on click of button
 var imageNum = 0;
 
 
 function domLoaded() {
+    // Set an initial image after site is loaded
     thirdImage();
-
-    
-
 
 }
 

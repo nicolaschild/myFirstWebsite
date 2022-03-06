@@ -11,65 +11,74 @@
     <title>Nicolas Child</title>
 </head>
 <body>
-    <div class="webPage">
-        <!-- HEADER -->
-        <div class="header"></div>
-        <!-- Top of the page toolbar in its entirety -->
-        <div class="Toolbar">
-            <div class="Name"><center>Nicolas Child</center></div>
-                    
-                        <!-- Menu stuffs -->
+    <div id="container">
+        <div class="webPage">
+            <!-- HEADER -->
+            <header class="header"></header>
+            <!-- Top of the page toolbar in its entirety -->
+            <div class="Toolbar">
+                <div class="Name"><center>Nicolas Child</center></div>
+                        
+                            <!-- Menu stuffs -->
 
-                        <div class="menu">
-                            <div class="photoHeader"><img src="images/Nick.jpg" width="100%" height="100%"></image></div>
+                            <div class="menu">
+                                <div class="photoHeader"><img src="images/Nick.jpg" width="100%" height="100%"></image></div>
 
-                            <!-- Home drop down menu -->
-                            <button id="home" onclick="pageRedirect('www.nicolaschild.com', 'home')">
-                                Home
-                            </button>
+                                <!-- Home drop down menu -->
+                                <button id="home" onclick="pageRedirect('www.nicolaschild.com', 'home')">
+                                    Home
+                                </button>
 
-                            <button id="aboutMe" onclick="pageRedirect('www.github.com/nicolaschild', 'aboutMe')">
-                                About Me
-                            </button>
+                                <button id="aboutMe" onclick="pageRedirect('www.github.com/nicolaschild', 'aboutMe')">
+                                    About Me
+                                </button>
 
-                            <button id="projects" onclick="pageRedirect('www.github.com/nicolaschild', 'projects')">
-                                Projects
-                            </button>
+                                <button id="projects" onclick="pageRedirect('www.github.com/nicolaschild', 'projects')">
+                                    Projects
+                                </button>
 
 
-                    </div>
-        </div>
-
-    <!-- MAIN PAGE -->
-    <div class="mainPage">
-        <!-- Creative Work Header for page -->
-        <div class="creative"><div id="creativeText">About Me</div></div>
-
-        <!-- Need to establish a CSS flexbox here -->
-        <div class="photoOne">
-            <div id="firstPicture"><img class="imageBorders"></image></div>
-            <div class="descriptions"><article id="imageExplanation"></article></div>
-            <div id="mainButton"><button id="infoButton" onclick="expandInfo()">Next Image</button></div>
-        </div>
-
-        <div class="photoTwo">
-            <!-- Youtube video in page -->
-            <div id="secondVideo">
-                <iframe id="video" width="100%" height="250em" src="https://www.youtube.com/embed/UJQYeiQYOvw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
             </div>
+
+        <!-- MAIN PAGE -->
+        <div class="mainPage">
+            <!-- Creative Work Header for page -->
+            <div class="creative"><div id="creativeText">About Me</div></div>
+
+            <!-- Need to establish a CSS flexbox here -->
+            <div class="photoOne">
+                <div id="firstPicture"><img class="imageBorders"></image></div>
+                <div class="descriptions"><article id="imageExplanation"></article></div>
+                <div id="mainButton"><button id="infoButton" onclick="expandInfo()">Next Image</button></div>
+            </div>
+
+            <div class="photoTwo">
+                <!-- Youtube video in page -->
+                <div id="secondVideo">
+                    <iframe id="video" width="100%" height="250em" src="https://www.youtube.com/embed/UJQYeiQYOvw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            
+
+            <!-- Another CSS flexbox -->
+            <div class="photoTwo"></div>
+
+            <!-- Another CSS flexbox -->
+            <div class="photoThree"><article>Welcome to my website! Here is a little clip I made introducing
+                myself. This site will eventually become my online portfollio once I become more familiar with
+                front end design. As I said in the video, computer science is my passion. I coded this site
+                from scratch and I hope to keep learning more about web development in the future!
+            </article></div>
         </div>
-        
-
-        <!-- Another CSS flexbox -->
-        <div class="photoTwo"></div>
-
-        <!-- Another CSS flexbox -->
-        <div class="photoThree"></div>
-    </div>
 
 
-    </div>
-    <div class="Footer"><center>footer</center></div>
+            </div>
+            <!-- final CSS grid layout -->
+            <footer class="Footer">
+                <p><center id="legal">For educational purposes only</center></p>
+            </footer>
+        </div>
     </div>
 </body>
 </html>
