@@ -86,3 +86,27 @@ function expandInfo() {
     }, 300)
 
 }
+
+
+// Function to show/hide the main page
+// Also creates another button to show it again
+// When the new button is clicked, it is then terminated
+// and the content comes back...
+function hideAll() {
+    $("main").css("display", "none");
+
+
+    let $newButton = document.createElement("button");
+    // $newButton.setAttribute("style", "height: 100em");
+    // $newButton.setAttribute("style", "width: 10em");
+    // $newButton.setAttribute("style", "margin-left: 50%");
+    $newButton.textContent = "Show All";
+    $(".webPage").append($newButton);
+
+    $newButton.addEventListener("click", function(){
+        $("main").css("display", "");
+        $newButton.remove();
+
+    })
+
+}

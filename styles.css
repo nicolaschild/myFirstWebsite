@@ -3,7 +3,7 @@
 /* DESKTOP */
 
 html {
-    background-color: #202020;
+    background-image: url("images/waterFalls.gif");
 
 }
 .webPage {
@@ -225,6 +225,12 @@ background-image: linear-gradient(90deg, black, #444444)
 
 }
 
+#hideButton {
+
+    width: 10em;
+    margin-bottom: 10%;
+}
+
 #infoButton {
     width: 10em;
 
@@ -393,6 +399,11 @@ body {
     margin-left: 50px;
 }
 
+#hideButton {
+
+    display: none;
+}
+
 .descriptions {
     padding: 10px;
     display: block;
@@ -413,6 +424,8 @@ body {
     align-self: auto;
     order: 1;
 }
+
+
 
 
 /* Video for flow */
@@ -455,7 +468,6 @@ body {
 .Footer {
 
     min-height: 100px;
-    margin-top: 200px;
 }
 
 }
