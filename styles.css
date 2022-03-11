@@ -1,22 +1,4 @@
 
-/* MOBILE STUFF */
-@media screen 
-and (max-device-width : 600px) {
-    /* Setting max height width of page */
-    #container {
-        max-width: 500px;
-        min-width: 600px;
-        margin: auto;
-    }
-
-    .photoHeader {
-        content: none;
-
-    }
-
-    
-
-}
 
 /* DESKTOP */
 
@@ -298,6 +280,183 @@ background-image: linear-gradient(90deg, black, #444444)
 #legal {
     margin-top: 2em;
     color: white;
+
+}
+
+
+/* MOBILE STUFF */
+@media screen 
+and (max-device-width : 600px) {
+/* Setting max height width of page */
+/* Header stuffs for mobile */
+
+body {
+    min-width: 450px;
+    max-width: 500px;
+
+    overflow-x: hidden;
+
+}
+
+#container {
+    max-width: 500px;
+    min-height: 869px;
+    max-height: 900px;
+}
+
+#headShot {
+    width: 0px;
+    height: 0px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+    margin-left: 16%;
+    margin-bottom: 6%;
+    border: none;
+    border-radius: none;
+
+}
+
+.Toolbar {
+    border: 2px solid black;
+    border-radius: 1px;
+
+}
+
+#home {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+}
+
+.photoHeader {
+    border: none;
+    border-radius: none;
+
+}
+
+#aboutMe {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+}
+
+#projects {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+          
+}
+
+
+/* Body stuff for mobile */
+
+/* Need these inner grids to be flex style on mobile */
+.photoOne {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: normal;
+    align-content: flex-start;
+    margin-top: -50px;
+}
+
+#firstPicture {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    margin-left: 40px;
+    padding: 10px;
+    order: 0;
+}
+
+#infoButton {
+    padding: 10px;
+    margin-left: 50px;
+}
+
+.descriptions {
+    padding: 10px;
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 2;
+
+}
+
+
+#mainButton {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 1;
+}
+
+
+/* Video for flow */
+.photoTwo {
+    margin-top: 60%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+}
+#secondVideo {
+    margin: none;
+}
+
+#video {
+    margin: none;
+    width: 170px;
+}
+
+
+
+
+/* Place for the introductory thing */
+.photoThree {
+    background-color: none;
+    border: none;
+    border-radius: none;
+    height: 0px;
+    width: 0px;
+
+}
+
+#siteInfo {
+    background-color: none;
+    font-size: 0px;
+}
+
+.Footer {
+
+    min-height: 100px;
+    margin-top: 200px;
+}
 
 }
 

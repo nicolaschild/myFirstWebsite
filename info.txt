@@ -1,0 +1,5 @@
+This site is mobile friendly for iphones and other smaller devices
+The site still looks good on iPad and tablets with the regular view
+
+I used my JS to show/remove current image and replace it with a new
+image and a new description.

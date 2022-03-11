@@ -47,10 +47,9 @@ function secondImage() {
 }
 
 function thirdImage() {
-    $("#imageExplanation").text("In highschool I was the varsity team captain for the Timpview\n\
-    Thunderbirds (left). I often think of my experiences in sports and how they it changed my\n\
-    perspective on taking on challenge. I went on to play a year of college football before I realized that I\n\
-    wanted to be something more than just a football player.");
+    $("#imageExplanation").text("Welcome to my website! I hope you enjoy. I put this together from scratch.\n\
+    Using CSS/HTML/JS and no front end tools; hence why it is an eye sore. Anyways, here's some pictures of me!\n\
+    This is a photo of me taken in highschool (left), I used to play ball #BallIsLyfe");
     $("#imageExplanation").css("background-color", "#dddddd");
     $(".imageBorders").css("width", "12em");
     $(".imageBorders").attr("src", "images/football.jpg");
