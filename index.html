@@ -4,7 +4,8 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="script.js"></script>
+        <script src="js/main.js"></script>
+        <link rel="icon" type="image/png" href="../images/mainIco.ico">
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
         <link rel="stylesheet" type="text/css" href="/css/main.css"></link>
         <!-- <link rel="stylesheet" href="theme.css"> -->
@@ -18,26 +19,26 @@
                 <!-- Top of the page toolbar in its entirety -->
                 <div class="Toolbar">
                     <div class="Name"><center>Nicolas Child</center></div>
-                            
-                                <!-- Menu stuffs -->
+                                
+                        <!-- Menu stuffs -->
 
-                                <nav class="menu">
-                                    <div class="photoHeader"><img id="headShot" src="images/Nick.jpg" width="100%" height="100%"></image></div>
+                        <nav class="menu">
+                            <div class="photoHeader"><img id="headShot" src="images/Nick.jpg" width="100%" height="100%"></image></div>
 
-                                    <!-- Home drop down menu -->
-                                    <button id="home" onclick="pageRedirect('www.nicolaschild.com', 'home')">
-                                        Home
-                                    </button>
+                            <!-- Home drop down menu -->
+                            <button id="home" onclick="pageRedirect('www.nicolaschild.com', 'home')">
+                                Home
+                            </button>
 
-                                    <button id="aboutMe" onclick="pageRedirect('www.youtube.com/watch?v=UJQYeiQYOvw&ab_channel=NickChild', 'aboutMe')">
-                                        About Me
-                                    </button>
+                            <button id="aboutMe" onclick="pageRedirect('www.youtube.com/watch?v=UJQYeiQYOvw&ab_channel=NickChild', 'aboutMe')">
+                                About Me
+                            </button>
 
-                                    <button id="projects" onclick="pageRedirect('www.github.com/nicolaschild', 'projects')">
-                                        Projects
-                                    </button>
+                            <button id="projects" onclick="pageRedirect('www.github.com/nicolaschild', 'projects')">
+                                Projects
+                            </button>
 
-                                </nav>
+                        </nav>
                 </div>
 
             <!-- MAIN PAGE -->
@@ -52,6 +53,7 @@
                     <div class="descriptions"><article id="imageExplanation"></article></div>
                     <!-- Buttons -->
                     <div id="mainButton">
+                        <button id="formButton" onclick="openForm()"><div id="formText">Log Visit</div></button>
                         <button id="hideButton" onclick="toggleTheme()"><div id="themeText">Apply Theme</div></button>
                         <button id="hideButton" onclick="hideAll()"><div id="hideText">Hide Video</div></button>
                         <button id="infoButton" onclick="expandInfo()">Next Image</button>

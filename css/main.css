@@ -268,16 +268,12 @@ button
         margin-right: 4em;
     }
 
-#hideButton 
+#infoButton, #formButton, #hideButton
     {
         width: 10em;
-        margin-bottom: 10%;
+        margin-bottom: 20%;
     }
 
-#infoButton 
-    {
-        width: 10em;
-    }
 
 /* SECOND LINE OF CSS FLEX STUFFS */
 .photoTwo 
@@ -438,11 +434,17 @@ button
             order: 0;
         }
 
-    #infoButton 
+    #infoButton, #formButton, #hideButton
         {
-            padding: 10px;
-            margin-left: 50px;
+            width: 10em;
+            height: 3em;
+            margin-bottom: 1%;
         }
+    #formButton
+        {
+            margin-left: 7em;
+        }
+    
 
     #hideButton 
         {
@@ -490,7 +492,8 @@ button
     #video 
         {
             margin: none;
-            width: 170px;
+            margin-left: -3em;
+            width: 100%;
         }
 
     /* Place for the introductory thing */
@@ -508,6 +511,14 @@ button
             background-color: none;
             font-size: 0px;
             
+        }
+
+    #imageExplanation 
+        {
+            width: 380px;
+            margin-left: -3.25em;
+            
+
         }
 
     .Footer 
@@ -620,10 +631,20 @@ button
             order: 0;
         }
 
-    #infoButton 
+    #infoButton, #formButton, #hideButton
         {
-            padding: 10px;
-            margin-left: 30%;
+            width: 10em;
+            height: 3em;
+            margin-bottom: 1%;
+        }
+    #formButton
+        {
+            margin-left: 7em;
+        }
+
+    #infoButton
+        {
+            display: none;
         }
 
     #hideButton
@@ -672,18 +693,20 @@ button
             align-items: center;
             align-content: space-around;
         }
-    #secondVideo 
+
+    .mainPage
         {
-            margin: none;
+            height: 60em;
         }
 
     #video 
         {
             margin: none;
-            width: 350px;
-            height: 200px;
+            margin-left: -3em;
+            width: 100%;
         }
 
+    /* Place for the introductory thing */
     .photoThree 
         {
             background-color: none;
@@ -697,6 +720,15 @@ button
         {
             background-color: none;
             font-size: 0px;
+            
+        }
+
+    #imageExplanation 
+        {
+            width: 380px;
+            margin-left: -3.25em;
+            
+
         }
 
     .Footer 
@@ -705,3 +737,4 @@ button
         }
 
     }
+
